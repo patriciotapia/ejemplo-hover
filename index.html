@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.comite{
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center; 
+  }
+  .comite ul {
+  padding-right: 0px;
+  padding-left: 0px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  margin: 0px;
+  }
+  
+.comite li {
+  list-style-type: none;
+  display: inline;
+
+  text-align: center; 
+  }
+.caja {
+position: relative; /*Para poder ubicar la info dentro de la caja*/
+margin: 0px auto;
+}
+.caja img {
+border:2px solid black;
+}
+.info {
+position: absolute; /*Info sobre la imagen*/
+top: 5%;
+left: 5%; /*Desplazamos a partir de la esquina superior izquierda*/
+zoom: 1;
+filter: alpha(opacity=0); /*Opacidad Para IE */
+opacity: 0; /*Inicialmente transparente */
+padding: 5px;
+color: white;
+background: black;
+-moz-transition:all ease .8s; /*Aplicamos una ligera transición*/
+-webkit-transition:all ease .8s ;
+transition:all ease .8s;
+}
+.caja:hover .info {
+filter: alpha(opacity=80);
+opacity: .8; /*Al hacer hover sobre la caja hacemos visible los datos*/
+}
+</style>
+	<title>Image Hover with CSS3</title>
+	<link rel="stylesheet" type="text/css" href="ihover.css">
+	<meta author="Robinson Recalde">
+	<meta content="text/html; charset=UTF-8" http-equiv="content-type">
+</head>
+<body>
+<ul class="comite">
+<li>
+<div class="caja"><a href="URL_ENLACE"><img src="AleNaser.jpg" /><span class="info">Alejandra Naser es profesional permanente de las Naciones Unidas. 
+Chilena, de profesión Ingeniero Civil Informático y Máster en Tecnologías de la Información. 
+Experta de la CEPAL en materia de Gobierno Electrónico, Gobierno Abierto, Evaluación de la gestión de Programas públicos y Gestión por Resultados liderando proyectos de Cooperación Técnica a los países de la Región.
+Capacita en los cursos nacionales e internacionales del ILPES en materias de gobierno electrónico, gobierno abierto, transparencia gubernamental, rendición de cuentas, datos abiertos gubernamentales, integración de sistemas, evaluación y uso de indicadores, entre otros. 
+Es punto focal en CEPAL de la United Nations Public Administration Network (UNPAN) donde participa activamente en seminarios, foros y redes.</span></a>
+</div>
+</li>
+<li>
+<div class="caja"><a href="URL_ENLACE"><img src="AleNaser.jpg" /><span class="info">Alejandra Naser es profesional permanente de las Naciones Unidas. 
+Chilena, de profesión Ingeniero Civil Informático y Máster en Tecnologías de la Información. 
+Experta de la CEPAL en materia de Gobierno Electrónico, Gobierno Abierto, Evaluación de la gestión de Programas públicos y Gestión por Resultados liderando proyectos de Cooperación Técnica a los países de la Región.
+Capacita en los cursos nacionales e internacionales del ILPES en materias de gobierno electrónico, gobierno abierto, transparencia gubernamental, rendición de cuentas, datos abiertos gubernamentales, integración de sistemas, evaluación y uso de indicadores, entre otros. 
+Es punto focal en CEPAL de la United Nations Public Administration Network (UNPAN) donde participa activamente en seminarios, foros y redes.</span></a>
+</div>
+</li>
+<ul>
+</body>
+</html>
